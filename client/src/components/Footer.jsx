@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DeletePost = () => {
+const Footer = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const DeletePost = () => {
   )
 }
 
-export default DeletePost
+export default Footer

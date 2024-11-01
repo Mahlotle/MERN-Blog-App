@@ -1,8 +1,10 @@
 import React from 'react'
 
-function AuthoursPosts() {
+const AuthoursPosts = () => {
   return (
-    <div>AuthoursPosts</div>
+    <div>
+      
+    </div>
   )
 }
 

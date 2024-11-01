@@ -1,6 +1,6 @@
 import React from 'react'
 
-const DeletePost = () => {
+const Layout = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const DeletePost = () => {
   )
 }
 
-export default DeletePost
+export default Layout
+

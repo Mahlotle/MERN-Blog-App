@@ -1,9 +1,9 @@
 import React from 'react'
 
-function Authors() {
+const Authors = () => {
   return (
     <div>
-     Authors
+      
     </div>
   )
 }

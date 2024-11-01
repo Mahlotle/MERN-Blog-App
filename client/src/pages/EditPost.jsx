@@ -1,8 +1,10 @@
 import React from 'react'
 
-function EditPost() {
+const EditPost = () => {
   return (
-    <div>EditPost</div>
+    <div>
+      
+    </div>
   )
 }
 
