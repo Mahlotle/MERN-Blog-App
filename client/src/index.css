@@ -123,6 +123,17 @@ margin-top: 6rem;
 }
 
 
+.center{
+    text-align: center;
+    padding-top: 5rem;
+    margin-inline: center;
+    display: block;
+    width: 100%;
+}
+.error-page h2{
+    margin-top:3rem;
+}
+
 /* NAVBAR */
 nav{
     width: 100vw;
