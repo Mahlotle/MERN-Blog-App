@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AuthoursPosts = () => {
+const AuthorPosts = () => {
   return (
     <div>
       
@@ -8,4 +8,5 @@ const AuthoursPosts = () => {
   )
 }
 
-export default AuthoursPosts
+export default AuthorPosts
+
