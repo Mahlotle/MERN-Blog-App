@@ -43,7 +43,12 @@ body{
 a {
     color: var(--color-gray-700);
     text-decoration: none;
+    transition: color var(--transition);
 }
+a:hover {
+    color: var(--color-primary);
+}
+
 ul{
     list-style: none;
 }
@@ -87,7 +92,7 @@ margin-top: 6rem;
 .btn{
     display: inline-block;
     width: fit-content;
-    padding: 0.5rem;
+    padding: 0.6rem 1rem;
     border-radius: var(--radius-2);
     background: var(--color-white);
     font-weight: 500;
@@ -103,7 +108,7 @@ margin-top: 6rem;
 .btn.category {
     background: var(--color-bg);
     color: var(--color-primary);
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     font-weight: 400;
 }
 
@@ -140,13 +145,14 @@ nav{
     height: 5rem;
     display: grid;
     place-items: center;
-    background: var(255,255,255,0.5);
+    background: var(255,255,255,0.8);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-    border-bottom: 4xp solid var(--color-bg);
+    border-bottom: 2px solid var(--color-gray-300);
     backdrop-filter: blur(20px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav__container{
@@ -182,10 +188,11 @@ footer{
 
 .footer__categories{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
 }
 
 .footer__categories a {
@@ -206,4 +213,58 @@ footer{
     padding:1rem;
     color: var(--color-white);
     font-weight: 300;
+}
+
+/* HOME */
+.posts__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.post{
+    background: var(--color-white);
+    padding: 1.2rem;
+    border-radius: var(--radius-4 );
+    padding-bottom: 2rem;
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.posts:hover{
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1) ;
+    transform: translateY(-4px);
+}
+.post__thumbnail{
+  border-radius: var(--radius-3);
+  overflow: hidden;
+  height:16rem
+}
+.post__content{
+   margin-top: 1.5rem ;
+}
+.post__content h3{
+    margin: 0.8rem 0 0.5rem;
+    font-size: 1.2rem;
+}
+.post__footer{
+   display:flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin-top: 2rem; 
+}
+.post__author{
+    display:flex;
+    gap:1rem;
+    align-items:flex-start
+    
+}
+
+.post__author-avator{
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+    border-radius: var(--radius-2);
+    overflow: hidden;
 }

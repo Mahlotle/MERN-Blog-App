@@ -11,7 +11,10 @@ const Footer = () => {
     <li><Link to="posts/categories/:Entertainment">Entertainment</Link></li>
     <li><Link to="posts/categories/:Art">Art</Link></li>
     <li><Link to="posts/categories/:Aesthetics">Aesthetics</Link></li>
-    <li><Link to="posts/categories/:Tech">Tech</Link></li>
+    <li><Link to="posts/categories/:Fashion">Fashion</Link></li>
+    <li><Link to="posts/categories/:Travel">Travel</Link></li>
+    <li><Link to="posts/categories/:Health & Wellness">Health & Wellness</Link></li>
+
   </ul>
   <div className='footer__copyright'>
 <small>All Rights Reserved &copy; Copyright, MBlog.</small>
